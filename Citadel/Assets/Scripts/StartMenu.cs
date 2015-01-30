@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartMenu : MonoBehaviour 
-{
+public class StartMenu : MonoBehaviour {
 
-	void Update () 
-	{
-		if (Input.GetButtonDown ("XboxStart")) 
-		{
-			Application.LoadLevel(1);
+	public Texture2D background;
+	int theHeight = 50;
+	int theWidth = 200;
+	
+	void OnGUI() {
+		if ( GUI.Button(new Rect(Screen.width / 2 - (theWidth / 2), Screen.height - 50, theWidth, theHeight), background)) {
+			Application.LoadLevel ("Scene01");
 		}
-		if (Input.GetKeyDown("space"))
-		{
-			Application.LoadLevel(1);
-		}
-	}
+	}    
+
 }
