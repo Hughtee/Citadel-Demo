@@ -8,7 +8,7 @@ public class EnemyAI : MonoBehaviour {
 	private Vector2 Playerdirection;
 	private float XDiff;
 	private float YDiff;
-	 public float speed;
+	private float speed;
 	private int Wall;
 	private float distance;
 	private bool stun;
@@ -22,24 +22,21 @@ public class EnemyAI : MonoBehaviour {
 		stuntime = 0;
 		Wall = 1 << 10;
 		stun = false;
-	
+		speed = 10;
 	
 	
 	} 
 
 	void Update () 
 	{
-		distance = Vector2.Distance (Player, transform.position);
+		distance = Vector2.Distance(Player, transform.position);
 		Player = GameObject.Find ("Player").transform.position;
 		if (stuntime > 0) {
 						stuntime -= Time.deltaTime;
 				} 
 		else {
-				
 			stun=false;
 		}
-
-
 
 		if (distance < 10 && !stun) 
 		{
@@ -49,7 +46,7 @@ public class EnemyAI : MonoBehaviour {
 			}
 
 
-		if (!Physics2D.Raycast (transform.position, Playerdirection, 6, Wall)) 
+		if (!Physics2D.Raycast (transform.position, Playerdirection, 10, Wall)) 
 		{
 
 		rigidbody2D.AddForce (Playerdirection.normalized * speed);
@@ -61,7 +58,7 @@ public class EnemyAI : MonoBehaviour {
 
 		if(Playerhit.gameObject.tag == "Player")
 		{
-			stuntime = 1;
+			stuntime = 6;
 			stun=true;
 		}
 		}
