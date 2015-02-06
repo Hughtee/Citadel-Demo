@@ -1,67 +1,46 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyAI : MonoBehaviour {
+public class EnemyAI : MonoBehaviour 
+{
 
-
-	private Vector3 Player;
-	private Vector2 Playerdirection;
-	private float XDiff;
-	private float YDiff;
-	private float speed;
-	private int Wall;
-	private float distance;
-	private bool stun;
-	private float stuntime;
-
-
-
-
-	void Start ()
-	{
-		stuntime = 0;
-		Wall = 1 << 10;
-		stun = false;
-		speed = 10;
+	private float damage = 5;
+	private float pushBack = 100;
+	private Transform Player;
+	private float speed = 5;
+	private float stunWait = 3;
+	private float stunTimeStamp = -3;
 	
-	
-	} 
 
 	void Update () 
 	{
-		distance = Vector2.Distance(Player, transform.position);
-		Player = GameObject.Find ("Player").transform.position;
-		if (stuntime > 0) {
-						stuntime -= Time.deltaTime;
-				} 
-		else {
-			stun=false;
-		}
+		if(Player == null)
+			Player = GameObject.Find ("Player").transform;
 
-		if (distance < 10 && !stun) 
+		if(Time.time > stunTimeStamp + stunWait)
 		{
-			XDiff = Player.x - transform.position.x;
-			YDiff = Player.y - transform.position.y;
-			Playerdirection = new Vector2 (XDiff, YDiff);
+			Vector2 dir =  Player.position - transform.position ;
+			RaycastHit2D hit = Physics2D.Raycast (transform.position, dir, 12);
+			if(hit.transform!= null)
+			{
+				if (hit.transform.tag == "Player") 
+				{
+					Debug.DrawRay (transform.position, dir, Color.green);
+					rigidbody2D.AddForce (dir* speed);
+				}
 			}
-
-
-		if (!Physics2D.Raycast (transform.position, Playerdirection, 10, Wall)) 
-		{
-
-		rigidbody2D.AddForce (Playerdirection.normalized * speed);
-				
 		}
 	}
 
-	void OnCOllisionEnter2D (Collision2D Playerhit) {
-
+	void OnCollisionEnter2D (Collision2D Playerhit) 
+	{
 		if(Playerhit.gameObject.tag == "Player")
 		{
-			stuntime = 6;
-			stun=true;
+			stunTimeStamp = Time.time;
+			PlayerHealth ph = Playerhit.gameObject.GetComponent<PlayerHealth>();
+			ph.TakeDamage(damage, transform.position, pushBack);
 		}
-		}
+	}
 
 
 

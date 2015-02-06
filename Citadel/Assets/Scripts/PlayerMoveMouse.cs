@@ -1,32 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMoves : MonoBehaviour {
+public class PlayerMoveWASD : MonoBehaviour 
+{
 	public float speed;
 	Animator anim;
 
 	void Start()
-
 	{
 		anim = GetComponent<Animator> ();
-
-		}
-
-
+	}
+	
 	void Update() 
 	{
-
-	if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (0)) 
+		{
 			anim.SetTrigger ("Attack");
-				}
-	
+		}
 	}
-
-
-
-
-
-
+	
 	void FixedUpdate()
 	{
 		var mousePosition = Camera.main.ScreenToWorldPoint (Input.mousePosition);
