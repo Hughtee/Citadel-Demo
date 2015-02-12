@@ -19,6 +19,14 @@ TextureImporter:
     21300028: Hero_SpriteSheet_14
     21300030: Hero_SpriteSheet_15
     21300032: Hero_SpriteSheet_16
+    21300034: Hero_SpriteSheet_17
+    21300036: Hero_SpriteSheet_18
+    21300038: Hero_SpriteSheet_19
+    21300040: Hero_SpriteSheet_20
+    21300042: Hero_SpriteSheet_21
+    21300044: Hero_SpriteSheet_22
+    21300046: Hero_SpriteSheet_23
+    21300048: Hero_SpriteSheet_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -67,7 +75,7 @@ TextureImporter:
         y: 451
         width: 45
         height: 52
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_1
@@ -77,17 +85,17 @@ TextureImporter:
         y: 445
         width: 45
         height: 58
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 112
+        x: 113
         y: 445
-        width: 46
+        width: 45
         height: 58
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_3
@@ -97,7 +105,7 @@ TextureImporter:
         y: 445
         width: 45
         height: 58
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_4
@@ -106,8 +114,8 @@ TextureImporter:
         x: 215
         y: 445
         width: 45
-        height: 59
-      alignment: 7
+        height: 58
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_5
@@ -117,7 +125,7 @@ TextureImporter:
         y: 447
         width: 45
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_6
@@ -127,7 +135,7 @@ TextureImporter:
         y: 344
         width: 25
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_7
@@ -137,7 +145,7 @@ TextureImporter:
         y: 344
         width: 25
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_8
@@ -147,7 +155,7 @@ TextureImporter:
         y: 344
         width: 25
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_9
@@ -157,7 +165,7 @@ TextureImporter:
         y: 344
         width: 25
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_10
@@ -167,67 +175,147 @@ TextureImporter:
         y: 344
         width: 25
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Hero_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 344
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 344
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_13
       rect:
         serializedVersion: 2
         x: 15
         y: 268
         width: 28
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_12
+    - name: Hero_SpriteSheet_14
       rect:
         serializedVersion: 2
         x: 48
         y: 268
-        width: 31
+        width: 28
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_13
+    - name: Hero_SpriteSheet_15
       rect:
         serializedVersion: 2
-        x: 80
+        x: 78
         y: 268
-        width: 26
+        width: 28
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_14
+    - name: Hero_SpriteSheet_16
       rect:
         serializedVersion: 2
         x: 108
         y: 268
         width: 29
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_15
+    - name: Hero_SpriteSheet_17
       rect:
         serializedVersion: 2
         x: 138
         y: 268
         width: 27
         height: 56
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_16
+    - name: Hero_SpriteSheet_18
       rect:
         serializedVersion: 2
         x: 166
         y: 268
         width: 26
         height: 56
-      alignment: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 181
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 179
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 179
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 179
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 179
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hero_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 185
+        width: 45
+        height: 52
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
