@@ -7,7 +7,7 @@ public class EnemyAI : MonoBehaviour
 	private float damage = 5;
 	private float pushBack = 100;
 	private Transform Player;
-	private float speed = 5;
+	private float speed = 4;
 	private float stunWait = 3;
 	private float stunTimeStamp = -3;
 	
