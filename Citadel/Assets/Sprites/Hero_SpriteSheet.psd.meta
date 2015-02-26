@@ -27,6 +27,10 @@ TextureImporter:
     21300044: Hero_SpriteSheet_22
     21300046: Hero_SpriteSheet_23
     21300048: Hero_SpriteSheet_24
+    21300050: Hero_SpriteSheet_25
+    21300052: Hero_SpriteSheet_26
+    21300054: Hero_SpriteSheet_27
+    21300056: Hero_SpriteSheet_28
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,255 +72,485 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Hero_SpriteSheet_0
+    - name: 
       rect:
         serializedVersion: 2
-        x: 8
-        y: 451
+        x: 4
+        y: 436
         width: 45
-        height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 445
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_2
-      rect:
-        serializedVersion: 2
-        x: 113
-        y: 445
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_3
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 445
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_4
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 445
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_5
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 447
-        width: 45
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_6
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 344
-        width: 25
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_7
+    - name: 
       rect:
         serializedVersion: 2
         x: 53
-        y: 344
-        width: 25
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 437
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_8
+    - name: 
       rect:
         serializedVersion: 2
-        x: 88
-        y: 344
-        width: 25
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 98
+        y: 437
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_9
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 436
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 436
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 436
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 345
+        width: 24
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 345
+        width: 27
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 344
+        width: 29
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
       rect:
         serializedVersion: 2
         x: 123
         y: 344
-        width: 25
+        width: 29
         height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_10
+    - name: 
       rect:
         serializedVersion: 2
         x: 158
         y: 344
-        width: 25
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 33
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_11
+    - name: 
       rect:
         serializedVersion: 2
-        x: 206
-        y: 344
-        width: 18
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_12
-      rect:
-        serializedVersion: 2
-        x: 260
-        y: 344
-        width: 18
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_13
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 268
-        width: 28
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_14
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 268
-        width: 28
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_15
-      rect:
-        serializedVersion: 2
-        x: 78
-        y: 268
-        width: 28
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_16
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 268
+        x: 217
+        y: 346
         width: 29
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_17
+    - name: 
       rect:
         serializedVersion: 2
-        x: 138
+        x: 270
+        y: 346
+        width: 29
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 10
         y: 268
-        width: 27
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 24
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_18
+    - name: 
       rect:
         serializedVersion: 2
-        x: 166
+        x: 52
+        y: 268
+        width: 25
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 268
+        width: 25
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 113
         y: 268
         width: 26
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_19
+    - name: 
       rect:
         serializedVersion: 2
-        x: 8
-        y: 181
-        width: 45
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 162
+        y: 268
+        width: 27
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_20
+    - name: 
       rect:
         serializedVersion: 2
-        x: 57
-        y: 179
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 198
+        y: 268
+        width: 30
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_21
+    - name: 
       rect:
         serializedVersion: 2
-        x: 108
-        y: 179
+        x: 27
+        y: 205
         width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_22
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 206
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 206
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 205
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 205
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 205
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 436
+        width: 45
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 437
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 437
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 436
+        width: 45
+        height: 51
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 205
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 206
+        width: 45
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 206
+        width: 44
+        height: 52
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 205
+        width: 45
+        height: 50
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 122
+        width: 29
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 121
+        width: 40
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 123
+        width: 40
+        height: 54
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
       rect:
         serializedVersion: 2
         x: 159
-        y: 179
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 122
+        width: 40
+        height: 53
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_23
+    - name: 
       rect:
         serializedVersion: 2
-        x: 208
-        y: 179
-        width: 45
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 211
+        y: 123
+        width: 41
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Hero_SpriteSheet_24
+    - name: 
       rect:
         serializedVersion: 2
-        x: 264
-        y: 185
-        width: 45
+        x: 261
+        y: 127
+        width: 44
         height: 52
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .500000715, y: .171804279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 123
+        width: 49
+        height: 55
+      alignment: 9
+      pivot: {x: .449354529, y: .409088403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 107
+        width: 53
+        height: 56
+      alignment: 9
+      pivot: {x: .418838203, y: .467964172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 24
+        width: 53
+        height: 77
+      alignment: 9
+      pivot: {x: .416763872, y: .607298434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 24
+        width: 72
+        height: 86
+      alignment: 9
+      pivot: {x: .566172481, y: .652492762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 25
+        width: 80
+        height: 83
+      alignment: 9
+      pivot: {x: .649991214, y: .633556306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 35
+        width: 64
+        height: 55
+      alignment: 9
+      pivot: {x: .665431499, y: .237419337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 26
+        width: 48
+        height: 44
+      alignment: 9
+      pivot: {x: .477942139, y: .172449365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 24
+        width: 41
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 268
+        width: 27
+        height: 55
+      alignment: 7
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

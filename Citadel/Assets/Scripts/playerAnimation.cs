@@ -2,6 +2,9 @@
 using System.Collections;
 
 public class playerAnimation : MonoBehaviour {
+
+
+
 	public Animator anim;
 
 
@@ -13,6 +16,15 @@ public class playerAnimation : MonoBehaviour {
 
 	void Update () 
 	{
+		if (Input.GetMouseButtonDown(0))
+		{
+			anim.SetBool ("Attack", true);
+		}
+		else
+		{
+			anim.SetBool ("Attack", false);
+		}
+
 		if (Input.GetKey (KeyCode.A)) 
 		{
 			anim.SetBool ("Left",true);
@@ -41,28 +53,35 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",true);
 		}
-		if (Input.GetKey(KeyCode.W)) {
-						anim.SetBool ("WalkUp", true);
-				} 
-		else {
+		if (Input.GetKey(KeyCode.W)) 
+		{
+				anim.SetBool ("WalkUp", true);
+		} 
+		else 
+		{
 			anim.SetBool ("WalkUp", false);
 		}
-		if (Input.GetKey(KeyCode.A)) {
+		if (Input.GetKey(KeyCode.A)) 
+		{
 			anim.SetBool ("WalkLeft", true);
 		} 
-		else {
+		else 
+		{
 			anim.SetBool ("WalkLeft", false);
 		}
-		if (Input.GetKey(KeyCode.D)) {
+		if (Input.GetKey(KeyCode.D)) 
+		{
 			anim.SetBool ("WalkRight", true);
 		} 
 		else {
 			anim.SetBool ("WalkRight", false);
 		}
-		if (Input.GetKey(KeyCode.S)) {
+		if (Input.GetKey(KeyCode.S)) 
+		{
 			anim.SetBool ("WalkDown", true);
 		} 
-		else {
+		else 
+		{
 			anim.SetBool ("WalkDown", false);
 		}
 	}
