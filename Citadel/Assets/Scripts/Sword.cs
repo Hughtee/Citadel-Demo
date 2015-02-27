@@ -17,7 +17,7 @@ public class Sword : MonoBehaviour
 		{
 			if(direction == player.direction)
 			{
-				//(other.gameObject.tag == "Enemy")
+				if(other.gameObject.tag == "Enemy")
 				{
 					Destroy (other.gameObject);
 				}
