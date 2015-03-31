@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{6A51AF6C-4720-04EB-3BF8-288F45B38501}") = "Citadel", "Assembly-CSharp.csproj", "{714FDE05-812F-8F3B-2227-15D8CCF09545}"
 EndProject
-Project("{6A51AF6C-4720-04EB-3BF8-288F45B38501}") = "Citadel", "Assembly-CSharp-Editor.csproj", "{90D28C45-380C-1E0D-B911-EC4A34E8C278}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,15 +13,11 @@ Global
 		{714FDE05-812F-8F3B-2227-15D8CCF09545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{714FDE05-812F-8F3B-2227-15D8CCF09545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{714FDE05-812F-8F3B-2227-15D8CCF09545}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90D28C45-380C-1E0D-B911-EC4A34E8C278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90D28C45-380C-1E0D-B911-EC4A34E8C278}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90D28C45-380C-1E0D-B911-EC4A34E8C278}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90D28C45-380C-1E0D-B911-EC4A34E8C278}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
