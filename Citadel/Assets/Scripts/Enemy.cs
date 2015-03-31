@@ -14,6 +14,6 @@ public class Enemy : MonoBehaviour {
 
 		transform.eulerAngles = new Vector3 (0, 0, z);
 
-		rigidbody2D.AddForce (gameObject.transform.up * speed);
+		GetComponent<Rigidbody2D>().AddForce (gameObject.transform.up * speed);
 }
 }

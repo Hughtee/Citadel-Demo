@@ -26,7 +26,7 @@ public class EnemyAI : MonoBehaviour
 				if (hit.transform.tag == "Player") 
 				{
 					Debug.DrawRay (transform.position, dir, Color.green);
-					rigidbody2D.AddForce (dir* speed);
+					GetComponent<Rigidbody2D>().AddForce (dir* speed);
 				}
 			}
 		}

@@ -23,10 +23,10 @@ public class gun : MonoBehaviour
 			{
 			clip --;
 			GameObject projectile= Instantiate(shootobj,FP.position,FP.rotation)as GameObject;
-			projectile.rigidbody2D.velocity=new Vector2(0,speed);
+			projectile.GetComponent<Rigidbody2D>().velocity=new Vector2(0,speed);
 
 			GameObject projectile2= Instantiate(shootobj,FP2.position,FP2.rotation)as GameObject;
-			projectile2.rigidbody2D.velocity=new Vector2(0,speed);
+			projectile2.GetComponent<Rigidbody2D>().velocity=new Vector2(0,speed);
 			}
 
 				

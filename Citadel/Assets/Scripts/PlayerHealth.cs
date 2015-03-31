@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
 
 			Vector2 pushDir = transform.position - enemyPos;
 			pushDir = pushDir.normalized;
-			rigidbody2D.AddForce (pushDir * pushBack);
+			GetComponent<Rigidbody2D>().AddForce (pushDir * pushBack);
 		}
 	}
 }

@@ -26,9 +26,9 @@ public class PlayerMoveWASD : MonoBehaviour
 		
 		transform.rotation = rot;
 		transform.eulerAngles = new Vector3 (0, 0, transform.eulerAngles.z);
-		rigidbody2D.angularVelocity = 0;
+		GetComponent<Rigidbody2D>().angularVelocity = 0;
 		
 		float input = Input.GetAxis ("Vertical");
-		rigidbody2D.AddForce (gameObject.transform.up * speed * input);
+		GetComponent<Rigidbody2D>().AddForce (gameObject.transform.up * speed * input);
 	}
 }
