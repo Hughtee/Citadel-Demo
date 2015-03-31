@@ -65,7 +65,10 @@
      <Compile Include="Assets\Scripts\playerMoveWASD.cs" />
      <Compile Include="Assets\Scripts\projectile.cs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c3a09e6... End of Quarter
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCamera.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraAnchor.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d\Code\Camera\tk2dCameraUtil.cs" />
