@@ -3,16 +3,20 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-	public int time;
+	public float time;
 	public GUIText timer;
 	public PlayerHealth playerhealth;
 
+
 	void Start()
 	{
-		StartCoroutine (countdown());
+		time = 60;
+
+
+		//StartCoroutine (countdown());
 	}
 	
-	IEnumerator countdown()
+	/*IEnumerator countdown()
 	{
 		while (time > 0)
 		{
@@ -33,19 +37,39 @@ public class Timer : MonoBehaviour {
 		else
 		{
 			Application.LoadLevel ("Winner");
+		} */
+
+	void Update ()
+
+	{
+		if (time == 0 && playerhealth.Health <= 0f) {
+			
+			timer.text = "Finished";
+			Application.LoadLevel ("GameOver");
+		}
+		else
+		{
+			timer.text = time.ToString("F0");
+			time -= Time.deltaTime;
 		}
 	}
 
 
-
-
-
-
-
-
-
-
+	public void addTime ()
+	{
+		time += 10f;
+	}
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

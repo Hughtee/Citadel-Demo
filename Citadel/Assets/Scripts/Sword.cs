@@ -6,6 +6,8 @@ public class Sword : MonoBehaviour
 	public playerMoveWASD.Direction direction;
 	playerMoveWASD player;
 
+	public Timer timer;
+
 	void Start()
 	{
 		player = FindObjectOfType<playerMoveWASD> ();
@@ -20,6 +22,7 @@ public class Sword : MonoBehaviour
 				if(other.gameObject.tag == "Enemy")
 				{
 					Destroy (other.gameObject);
+					timer.addTime();
 				}
 			}
 		}

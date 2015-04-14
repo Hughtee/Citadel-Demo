@@ -4,12 +4,12 @@ using System.Collections;
 public class EnemyAI : MonoBehaviour 
 {
 
-	private float damage = 5;
-	private float pushBack = 100;
+	public float damage = 5;
+	public float pushBack = 100;
 	private Transform Player;
-	private float speed = 4;
-	private float stunWait = 3;
-	private float stunTimeStamp = -3;
+	public float speed = 4;
+	public float stunWait = 3;
+	public float stunTimeStamp = -3;
 	
 
 	void Update () 
