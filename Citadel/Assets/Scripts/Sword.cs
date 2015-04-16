@@ -5,7 +5,7 @@ public class Sword : MonoBehaviour
 {
 	public playerMoveWASD.Direction direction;
 	playerMoveWASD player;
-
+	public GameObject[] Items;
 	public Timer timer;
 
 	void Start()
@@ -23,6 +23,7 @@ public class Sword : MonoBehaviour
 				{
 					Destroy (other.gameObject);
 					timer.addTime();
+					Instantiate(Items[Random.Range(0, Items.Length)], transform.position, Quaternion.identity);
 				}
 			}
 		}

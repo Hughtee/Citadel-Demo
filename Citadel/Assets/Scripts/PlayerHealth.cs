@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
 	private float hitPause = 0.5f;
 	private float lastHitTime = 0;
 
+
 	void Start () 
 	{
 		healthbar = GameObject.Find ("GreenHealth").GetComponent<SpriteRenderer>();
