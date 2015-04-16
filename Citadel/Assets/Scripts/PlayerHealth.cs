@@ -14,13 +14,19 @@ public class PlayerHealth : MonoBehaviour
 	{
 		healthbar = GameObject.Find ("GreenHealth").GetComponent<SpriteRenderer>();
 		healthscale = healthbar.transform.localScale;
+
 	}
 
 	void Update () 
 	{
 		HealthUpdate ();
+
 	}
 
+	public void addHealth ()
+	{
+		Health += 10f;
+	}
 
 	void HealthUpdate () 
 	{

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class playerMoveWASD : MonoBehaviour 
 {
+
 	public enum Direction
 	{
 		North,
@@ -16,7 +17,8 @@ public class playerMoveWASD : MonoBehaviour
 	
 	public bool FacingLeft = false;
 	public bool FacingRight = false ;
-	public bool FacingUp = false;	
+	public bool FacingUp = false;
+	public PlayerHealth health;
 
 	void Update ()
 	{
@@ -43,6 +45,10 @@ public class playerMoveWASD : MonoBehaviour
 			if(GetComponent<Rigidbody2D>().velocity.y < -0.1f)
 				direction = Direction.South;
 		}
+
 	}
+
+
+
 }
 
