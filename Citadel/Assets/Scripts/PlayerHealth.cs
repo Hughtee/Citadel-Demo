@@ -49,6 +49,18 @@ public class PlayerHealth : MonoBehaviour
 			GetComponent<Rigidbody2D>().AddForce (pushDir * pushBack);
 		}
 	}
+
+	
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		
+		if (col.tag == "Player")
+		{
+
+			Destroy(gameObject);
+			addHealth();
+		}
+	}
 }
 
 
