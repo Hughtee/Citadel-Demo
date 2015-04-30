@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Pickup : MonoBehaviour {
-	public PlayerHealth playerhealth;
+	//public PlayerHealth playerhealth;
 
 		
 		void OnTriggerEnter2D(Collider2D col)
@@ -11,10 +11,11 @@ public class Pickup : MonoBehaviour {
 			if (col.tag == "Player")
 			{
 				//money collected
+				col.gameObject.GetComponent<PlayerHealth>().addHealth();
 				
 				//destroy money object
 				Destroy(gameObject);
-				playerhealth.addHealth();
+				
 			}
 		}
 
