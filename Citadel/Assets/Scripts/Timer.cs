@@ -1,22 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Timer : MonoBehaviour {
+public class Timer : MonoBehaviour
+{
 
-	public float time;
-	public GUIText timer;
-	public PlayerHealth playerhealth;
+		public float time;
+		public GUIText timer;
+		public PlayerHealth playerhealth;
+
+		void Start ()
+		{
+				time = 60;
 
 
-	void Start()
-	{
-		time = 60;
 
-
-		//StartCoroutine (countdown());
-	}
+				//StartCoroutine (countdown());
+		}
 	
-	/*IEnumerator countdown()
+		/*IEnumerator countdown()
 	{
 		while (time > 0)
 		{
@@ -37,28 +38,52 @@ public class Timer : MonoBehaviour {
 		else
 		{
 			Application.LoadLevel ("Winner");
-		} */
-
-	void Update ()
-
-	{
-		if (time == 0 && playerhealth.Health <= 0f) {
-			
-			timer.text = "Finished";
-			Application.LoadLevel ("GameOver");
-		}
-		else
+		} 
+*/
+		void Update ()
 		{
-			timer.text = time.ToString("F0");
-			time -= Time.deltaTime;
+				
+		timer.text = time.ToString ("F0");
+		time -= Time.deltaTime;	
+
+
+			if (time > 60) 
+				time = 60;		
+
+
+
+		if (time < 0 && playerhealth.Health == 0f) {
+			
+						timer.text = "Finished";
+						Application.LoadLevel ("GameOver");
+				}  
+
+		if (time <= 0 && playerhealth.Health > 0f)
+		{
+						
+						/*timer.text = time.ToString ("F0");
+						time -= Time.deltaTime;
+
+
+						if (time > 60) 
+							time = 60;
+							*/
+			timer.text = "Finished";
+			Application.LoadLevel ("Winner");
+
 		}
-	}
 
 
-	public void addTime ()
-	{
-		time += 10f;
-	}
+	
+		}
+
+		public void addTime ()
+		{
+				time += 10f;
+
+
+		}
+
 }
 
 

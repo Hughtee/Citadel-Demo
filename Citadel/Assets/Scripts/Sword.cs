@@ -24,6 +24,9 @@ public class Sword : MonoBehaviour
 					Destroy (other.gameObject);
 					timer.addTime();
 					Instantiate(Items[Random.Range(0, Items.Length)], transform.position, Quaternion.identity);
+
+					if (timer.time > 60) 
+						timer.time = 60;
 				}
 			}
 		}

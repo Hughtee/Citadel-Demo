@@ -51,14 +51,7 @@ public class EnemyAI : MonoBehaviour
 		}
 	}
 
-	/*void OnCollisionEnter2D (Collision2D Playerhit) 
-	{
-		if(Playerhit.gameObject.tag == "Player")
-		{
-			stunTimeStamp = Time.time;
-			PlayerHealth ph = Playerhit.gameObject.GetComponent<PlayerHealth>();
-			ph.TakeDamage(damage, transform.position, pushBack);
-		} */
+		
 	void OnTrigger2D (Collider2D collider)
 	{
 		if (collider.CompareTag ("Player")) {				
@@ -90,4 +83,15 @@ public class EnemyAI : MonoBehaviour
 		}
 	}
 
-}	
+
+	void OnCollisionEnter2D (Collision2D Playerhit) 
+	{
+		if(Playerhit.gameObject.tag == "Player")
+		{
+			stunTimeStamp = Time.time;
+			PlayerHealth ph = Playerhit.gameObject.GetComponent<PlayerHealth>();
+			ph.TakeDamage(damage, transform.position, pushBack);
+		} 
+
+} 
+}

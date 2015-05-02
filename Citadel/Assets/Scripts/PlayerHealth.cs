@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
 	private float lastHitTime = 0;
 
 
+
 	void Start () 
 	{
 		healthbar = GameObject.Find ("GreenHealth").GetComponent<SpriteRenderer>();
@@ -26,11 +27,18 @@ public class PlayerHealth : MonoBehaviour
 	public void addHealth ()
 	{
 		Health += 10f;
+
+		if (Health > 100) 
+			Health = 100;
+
 	}
 
 	void HealthUpdate () 
 	{
 		healthbar.transform.localScale = new Vector3 (healthscale.x * Health * 0.01f, 1, 1);
+
+		if (Health > 100) 
+			Health = 100;
 	}
 
 	public void TakeDamage (float damage, Vector3 enemyPos, float pushBack)
