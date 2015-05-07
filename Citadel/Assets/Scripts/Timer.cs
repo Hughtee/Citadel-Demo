@@ -7,76 +7,43 @@ public class Timer : MonoBehaviour
 		public float time;
 		public GUIText timer;
 		public PlayerHealth playerhealth;
+		public FadeInOut fade;
 
 		void Start ()
 		{
-				time = 60;
-
-
-
-				//StartCoroutine (countdown());
+			time = 60;
 		}
 	
-		/*IEnumerator countdown()
-	{
-		while (time > 0)
-		{
-			yield return new WaitForSeconds(1);
-			
-			timer.text = time.ToString();
-			
-			time -= 1;
-		}
 		
-		timer.text = "Finished";
-	
-		if (time == 0 && playerhealth.Health <= 0f) {
-	
-	
-			Application.LoadLevel ("GameOver");
-		}
-		else
+		void Update()
 		{
-			Application.LoadLevel ("Winner");
-		} 
-*/
-		void Update ()
-		{
-				
-		timer.text = time.ToString ("F0");
-		time -= Time.deltaTime;	
-
-
-			if (time > 60) 
-				time = 60;		
-
-
-
-		if (time < 0 && playerhealth.Health == 0f) {
 			
-						timer.text = "Finished";
-						Application.LoadLevel ("GameOver");
-				}  
-
-		if (time <= 0 && playerhealth.Health > 0f)
-		{
-						
-						/*timer.text = time.ToString ("F0");
-						time -= Time.deltaTime;
+						timer.text = time.ToString ("F0");
+						time -= Time.deltaTime;	
 
 
 						if (time > 60) 
-							time = 60;
-							*/
-			timer.text = "Finished";
-			Application.LoadLevel ("Winner");
+								time = 60;		
+						if (playerhealth.Health <= 0f) {
+			
+								timer.text = "Finished";
+		
+								//Application.LoadLevel ("GameOver");
+								StartCoroutine( ChangeLevel ( "GameOver") );
+						}
+		
+						if (time <= 0 && playerhealth.Health > 0f) {
+			
+								timer.text = time.ToString ("F0");
+								time -= Time.deltaTime;
+								if (time > 60) 
+									time = 60;
+								//Application.LoadLevel ("Winner");
+								StartCoroutine( ChangeLevel ( "Winner") );
 
+						}	
+				
 		}
-
-
-	
-		}
-
 		public void addTime ()
 		{
 				time += 10f;
@@ -84,6 +51,15 @@ public class Timer : MonoBehaviour
 
 		}
 
+	//bool isRunning = false;
+	IEnumerator ChangeLevel( string levelName )
+	{
+		GetComponent<GUIText>().enabled = false;
+
+		float fadeTime = fade.BeginFade (1);
+		yield return new WaitForSeconds (3.0f);
+		Application.LoadLevel (levelName);
+	}
 }
 
 

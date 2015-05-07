@@ -48,7 +48,8 @@ public class PlayerHealth : MonoBehaviour
 		{
 			Health -= damage;
 			if (Health <= 0) 
-				Application.LoadLevel ("GameOver");
+				Health = 0;
+			//	Application.LoadLevel ("GameOver");
 			if (Health > 100) 
 				Health = 100;
 
