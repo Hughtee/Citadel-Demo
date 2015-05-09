@@ -6,6 +6,8 @@ public class playerAnimation : MonoBehaviour {
 
 
 	public Animator anim;
+	const float coolDown = 0.5f;
+	public float timer = 0.0f;
 
 
 	void Start () 
@@ -13,12 +15,21 @@ public class playerAnimation : MonoBehaviour {
 		anim = GetComponent<Animator>();
 	}
 	
+	void UpdateTimer ()
+	{
+		timer -= Time.deltaTime;
+	}
 
 	void Update () 
 	{
+		UpdateTimer ();
 		if (Input.GetMouseButtonDown(0))
 		{
-			anim.SetBool ("Attack", true);
+			if (timer <= 0.0f)
+			{
+				anim.SetBool ("Attack", true);
+				timer = coolDown;
+			}
 		}
 		else
 		{

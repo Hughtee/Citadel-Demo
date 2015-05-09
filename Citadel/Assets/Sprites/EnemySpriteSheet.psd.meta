@@ -1,9 +1,92 @@
 fileFormatVersion: 2
 guid: 4f48b5e9aeaa95d42891921dd9eaf539
-timeCreated: 1430557560
+timeCreated: 1431129679
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: EnemySpriteSheet_0
+    21300002: EnemySpriteSheet_1
+    21300004: EnemySpriteSheet_2
+    21300006: EnemySpriteSheet_3
+    21300008: EnemySpriteSheet_4
+    21300010: EnemySpriteSheet_5
+    21300012: EnemySpriteSheet_6
+    21300014: EnemySpriteSheet_7
+    21300016: EnemySpriteSheet_8
+    21300018: EnemySpriteSheet_9
+    21300020: EnemySpriteSheet_10
+    21300022: EnemySpriteSheet_11
+    21300024: EnemySpriteSheet_12
+    21300026: EnemySpriteSheet_13
+    21300028: EnemySpriteSheet_14
+    21300030: EnemySpriteSheet_15
+    21300032: EnemySpriteSheet_16
+    21300034: EnemySpriteSheet_17
+    21300036: EnemySpriteSheet_18
+    21300038: EnemySpriteSheet_19
+    21300040: EnemySpriteSheet_20
+    21300042: EnemySpriteSheet_21
+    21300044: EnemySpriteSheet_22
+    21300046: EnemySpriteSheet_23
+    21300048: EnemySpriteSheet_24
+    21300050: EnemySpriteSheet_25
+    21300052: EnemySpriteSheet_26
+    21300054: EnemySpriteSheet_27
+    21300056: EnemySpriteSheet_28
+    21300058: EnemySpriteSheet_29
+    21300060: EnemySpriteSheet_30
+    21300062: EnemySpriteSheet_31
+    21300064: EnemySpriteSheet_32
+    21300066: EnemySpriteSheet_33
+    21300068: EnemySpriteSheet_34
+    21300070: EnemySpriteSheet_35
+    21300072: EnemySpriteSheet_36
+    21300074: EnemySpriteSheet_37
+    21300076: EnemySpriteSheet_38
+    21300078: EnemySpriteSheet_39
+    21300080: EnemySpriteSheet_40
+    21300082: EnemySpriteSheet_41
+    21300084: EnemySpriteSheet_42
+    21300086: EnemySpriteSheet_43
+    21300088: EnemySpriteSheet_44
+    21300090: EnemySpriteSheet_45
+    21300092: EnemySpriteSheet_46
+    21300094: EnemySpriteSheet_47
+    21300096: EnemySpriteSheet_48
+    21300098: EnemySpriteSheet_49
+    21300100: EnemySpriteSheet_50
+    21300102: EnemySpriteSheet_51
+    21300104: EnemySpriteSheet_52
+    21300106: EnemySpriteSheet_53
+    21300108: EnemySpriteSheet_54
+    21300110: EnemySpriteSheet_55
+    21300112: EnemySpriteSheet_56
+    21300114: EnemySpriteSheet_57
+    21300116: EnemySpriteSheet_58
+    21300118: EnemySpriteSheet_59
+    21300120: EnemySpriteSheet_60
+    21300122: EnemySpriteSheet_61
+    21300124: EnemySpriteSheet_62
+    21300126: EnemySpriteSheet_63
+    21300128: EnemySpriteSheet_64
+    21300130: EnemySpriteSheet_65
+    21300132: EnemySpriteSheet_66
+    21300134: EnemySpriteSheet_67
+    21300136: EnemySpriteSheet_68
+    21300138: EnemySpriteSheet_69
+    21300140: EnemySpriteSheet_70
+    21300142: EnemySpriteSheet_71
+    21300144: EnemySpriteSheet_72
+    21300146: EnemySpriteSheet_73
+    21300148: EnemySpriteSheet_74
+    21300150: EnemySpriteSheet_76
+    21300152: EnemySpriteSheet_77
+    21300154: EnemySpriteSheet_78
+    21300156: EnemySpriteSheet_79
+    21300158: EnemySpriteSheet_81
+    21300160: EnemySpriteSheet_82
+    21300162: EnemySpriteSheet_83
+    21300164: EnemySpriteSheet_84
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -26,29 +109,829 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 60
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: EnemySpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 933
+        width: 38
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 930
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 930
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 930
+        width: 38
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 851
+        width: 40
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 854
+        width: 41
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 854
+        width: 43
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 854
+        width: 45
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 854
+        width: 44
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 854
+        width: 41
+        height: 60
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 854
+        width: 44
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 854
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 854
+        width: 48
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 854
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 768
+        width: 44
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 768
+        width: 42
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 781
+        width: 7
+        height: 5
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 766
+        width: 54
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 768
+        width: 40
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 768
+        width: 44
+        height: 57
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 768
+        width: 45
+        height: 56
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 768
+        width: 40
+        height: 56
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 766
+        width: 46
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 765
+        width: 43
+        height: 56
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 621
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 621
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 499
+        width: 41
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 499
+        width: 40
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 392
+        width: 38
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 390
+        width: 49
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 390
+        width: 54
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 390
+        width: 55
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 390
+        width: 38
+        height: 58
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 390
+        width: 61
+        height: 61
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 436
+        width: 5
+        height: 5
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 390
+        width: 42
+        height: 59
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 390
+        width: 63
+        height: 69
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 388
+        width: 44
+        height: 64
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 354
+        width: 47
+        height: 37
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 356
+        width: 46
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 354
+        width: 47
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 343
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 343
+        width: 44
+        height: 45
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 343
+        width: 36
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 343
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 343
+        width: 40
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 275
+        width: 46
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 272
+        width: 47
+        height: 36
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 275
+        width: 47
+        height: 34
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 268
+        width: 40
+        height: 45
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 268
+        width: 29
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 268
+        width: 36
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 265
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 268
+        width: 35
+        height: 44
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 186
+        width: 36
+        height: 47
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 186
+        width: 34
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 185
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 185
+        width: 45
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 195
+        width: 44
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 190
+        width: 44
+        height: 32
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 191
+        width: 44
+        height: 30
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 191
+        width: 44
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 102
+        width: 36
+        height: 47
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 102
+        width: 34
+        height: 46
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 101
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 101
+        width: 45
+        height: 40
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 108
+        width: 44
+        height: 31
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 114
+        width: 44
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 113
+        width: 44
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EnemySpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 105
+        width: 44
+        height: 29
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
