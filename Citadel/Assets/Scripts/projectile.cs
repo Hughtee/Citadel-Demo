@@ -1,33 +1,41 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
-public class projectile : MonoBehaviour 
-{
-	public float speed= 20;
-	public float GivenDamage=5f;
-	public float projectileLife=2f;
+public class Projectile : MonoBehaviour {
+	public Transform Player;
+	public float damage;
+	public float fireRate;
+	private string creator;
+	public float speed;
+	public float lifetime = 5.0f;
+
 	
 	// Use this for initialization
-	void Start () 
-	{
-		Destroy(gameObject,projectileLife); 
-
+	void Start () {
+		GetComponent<Rigidbody2D>().velocity = transform.forward * speed;
+		
+		Destroy (this.gameObject, lifetime );
 	}
 	
-	void OnCollisionEnter2D(Collision2D collision)
+	// Update is called once per frame
+	void OnTriggerEnter2D( Collider2D other) 
 	{
-		if (collision.gameObject.tag == "Collider")
-		{
-			Destroy(gameObject);
+		if (other.tag == "Player" && creator == "Enemy03") {
+			Debug.Log ("Hit Player");
+		
+		} 
 
-		}
-		if (collision.gameObject.tag == "Enemy")
-		{
-			Destroy(gameObject);
 			
-			collision.gameObject.SendMessage("TakeDamage", GivenDamage, SendMessageOptions.DontRequireReceiver);
-
-			Debug.Log ("projectile has hit ENEMY");
 		}
+
+	
+	public void CreatedBy (string tag) {
+		creator = tag;
+	}
+	
+	public float FireRate () {
+		
+		return fireRate;
+		
 	}
 }

@@ -32,6 +32,14 @@ public class PlayerHealth : MonoBehaviour
 			Health = 100;
 
 	}
+	public void minusHealth ()
+	{
+		Health -= 1f;
+		
+	
+		
+	}
+
 
 	void HealthUpdate () 
 	{
@@ -68,6 +76,12 @@ public class PlayerHealth : MonoBehaviour
 
 			Destroy(gameObject);
 			addHealth();
+		}
+		if (col.tag == "Projectile")
+		{
+			
+
+			minusHealth();
 		}
 	}
 }

@@ -28,6 +28,16 @@ public class Sword : MonoBehaviour
 					if (timer.time > 60) 
 						timer.time = 60;
 				}
+				else if(other.gameObject.tag == "Enemy02")
+				{
+					Destroy (other.gameObject);
+
+				}
+				else if(other.gameObject.tag == "Enemy03")
+				{
+					Destroy (other.gameObject);
+					
+				}
 			}
 		}
 	}

@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour {
 	public float pushBack = 100;
 	public float damage = 5;
 	public float stunTimeStamp = -3;
+	public Animator anim;
 
 	float SW = 0.78539816f; // 45
 	float SE = 2.35619449f; // 135
@@ -13,12 +14,31 @@ public class EnemyAttack : MonoBehaviour {
 	float NW = 5.49778714f; // 315
 	float PI = 3.14159265f; // 180
 
+	public EnemyAI.EnemyDirection direction;
+	EnemyAI enemy;
+
+
+
+	void Start ()
+
+	{
+		anim = GetComponent<Animator>();
+		}
+
+
+
+
+
+
 	void OnTrigger2D (Collider2D collider)
 	{
 		if (collider.CompareTag ("Player")) {				
-			
+
+			anim.SetBool ("Attack", true);
+
 			if( isInsidePieSlice ( collider.transform.position, SW, SE ) ) {
 				Debug.Log( "COLLIDED SOUTH" );
+
 			}
 			else if( isInsidePieSlice ( collider.transform.position, SE, NE ) ) {
 				Debug.Log( "COLLIDED EAST" );
