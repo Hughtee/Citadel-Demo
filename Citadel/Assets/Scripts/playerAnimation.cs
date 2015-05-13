@@ -96,4 +96,5 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("WalkDown", false);
 		}
 	}
+
 }

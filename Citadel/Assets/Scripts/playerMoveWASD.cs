@@ -29,7 +29,7 @@ public class playerMoveWASD : MonoBehaviour
 	void FixedUpdate () 
 	{
 		float H_move = Input.GetAxis ("Vertical");
-		GetComponent<Rigidbody2D>().velocity = new Vector2 (H_move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+		GetComponent<Rigidbody2D >().velocity = new Vector2 (H_move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		
 		float V_move = Input.GetAxis ("Horizontal");
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (V_move * maxSpeed, GetComponent<Rigidbody2D>().velocity.x);
@@ -47,7 +47,6 @@ public class playerMoveWASD : MonoBehaviour
 		}
 
 	}
-
 
 
 }

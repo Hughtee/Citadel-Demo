@@ -8,7 +8,7 @@ public class Projectile : MonoBehaviour {
 	private string creator;
 	public float speed;
 	public float lifetime = 5.0f;
-
+	
 	
 	// Use this for initialization
 	void Start () {
@@ -22,12 +22,18 @@ public class Projectile : MonoBehaviour {
 	{
 		if (other.tag == "Player" && creator == "Enemy03") {
 			Debug.Log ("Hit Player");
-		
-		} 
-
+			Destroy(gameObject);
 			
-		}
-
+		} 
+		if (other.tag == "Wall" && creator == "Enemy03") {
+			Debug.Log ("Hit Wall");
+			Destroy(gameObject);
+			
+		} 
+		
+		
+	}
+	
 	
 	public void CreatedBy (string tag) {
 		creator = tag;

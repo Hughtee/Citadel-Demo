@@ -79,9 +79,9 @@ public class PlayerHealth : MonoBehaviour
 		}
 		if (col.tag == "Projectile")
 		{
-			
 
 			minusHealth();
+
 		}
 	}
 }

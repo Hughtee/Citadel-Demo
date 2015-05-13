@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
 	public Animator anim;
 
 
+
 	public enum EnemyDirection
 	{
 		North,
@@ -25,6 +26,7 @@ public class EnemyAI : MonoBehaviour
 	public bool FacingLeft = false;
 	public bool FacingRight = false ;
 	public bool FacingUp = false;
+	public bool Walk = false;
 	//private CircleCollider2D collider; 
 
 	void Start ()
@@ -47,6 +49,7 @@ public class EnemyAI : MonoBehaviour
 				//Debug.Log (hit.transform.tag);
 				if (hit.transform.tag == "Player") 
 				{
+					Walk = true;
 					Debug.DrawRay (transform.position, dir, Color.green);
 					if( Mathf.Abs( GetComponent<Rigidbody2D>().velocity.x) < speed &&
 					   Mathf.Abs( GetComponent<Rigidbody2D>().velocity.y ) < speed )
@@ -55,23 +58,24 @@ public class EnemyAI : MonoBehaviour
 					}
 				}
 				if(GetComponent<Rigidbody2D>().velocity.magnitude >0.1f)
-				{
+				{	
+
 					if(GetComponent<Rigidbody2D>().velocity.x > 0.1f)
 						direction = EnemyDirection.East;
 						anim.SetBool ("WalkRight", true);
-						Debug.Log ("Walking East");
+						Debug.Log ("Enemy Walking East");
 					if(GetComponent<Rigidbody2D>().velocity.x < -0.1f)
 						direction = EnemyDirection.West;
 						anim.SetBool ("WalkLeft", true);
-						Debug.Log ("Walking West");
+						Debug.Log ("Enemy Walking West");
 					if(GetComponent<Rigidbody2D>().velocity.y > 0.1f)
 						direction = EnemyDirection.North;
 						anim.SetBool ("WalkUp", true);
-						Debug.Log ("Walking North");
+						Debug.Log ("Enemy Walking North");
 					if(GetComponent<Rigidbody2D>().velocity.y < -0.1f)
 						direction = EnemyDirection.South;
 						anim.SetBool ("WalkDown", true);
-						Debug.Log ("Walking South");
+						Debug.Log ("Enemy Walking South");
 				}
 			}
 			else {

@@ -25,5 +25,6 @@ public class enemyManager : MonoBehaviour
 		int spawnPointIndex = Random.Range (0, spawnPoints.Length);
 
 		Instantiate (Enemy, spawnPoints [spawnPointIndex].position, spawnPoints [spawnPointIndex].rotation);
+	
 	}
 }

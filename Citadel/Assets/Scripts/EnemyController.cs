@@ -13,45 +13,50 @@ public class EnemyController : MonoBehaviour
 	private float nextFire;
 	public bool doesnotDisengage = false; // Finds player, doesn't stop attacking.
 	private bool playerFound = false;
-	public Animator anim;
+
 
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		anim = GetComponent<Animator>();		
+			
 		playerFound = false;
-				{
-						if (GetComponent<Rigidbody> ()) {
-								GetComponent<Rigidbody> ().freezeRotation = true;
-				anim.SetBool ("Tower Down",true);
+			{
+						
+		if (GetComponent<Rigidbody> ()) 
+			{
+				GetComponent<Rigidbody> ().freezeRotation = true;
+
 			}
 
-				}
-		}
+			}
+	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
 	
-		if (player) {
+		if (player) 
+		{
 			if (attackRange > Vector3.Distance (player.transform.position, transform.position)
-				|| playerFound) {
+				|| playerFound) 
+			{
 				// We found the Player  We don't want to stop attacking
 				if (doesnotDisengage) 
 				{
 					playerFound = true;
 				
 
-				}
-				// Look AT Player
+				} 
+				// Look AT Player */
 				transform.LookAt (player.transform);
 
 
 
 
-				if (Time.time > nextFire) {
+				if (Time.time > nextFire) 
+				{
 					nextFire = Time.time + fireRate;
 
 					GameObject bullet = Instantiate (projectile, firePoint.position, firePoint.rotation) as GameObject;
@@ -59,13 +64,29 @@ public class EnemyController : MonoBehaviour
 					bullet.GetComponent<Projectile> () .CreatedBy ("Enemy03");
 				}
 
-			} else {
-			
-			}
-		} else {
+			} 
+		
+		} 
+		else 
+		{
 			player = GameObject.FindGameObjectWithTag ("Player");
 			
 		}
+	}
+	void OnTriggerStay2D(Collider2D col)
+	{
+		
+		if (col.tag == "Player") {
+						
+			playerFound = true;
+
+
+				} 
+		else 
+		{	
+			playerFound = false;
+				}
+
 	}
 
 
