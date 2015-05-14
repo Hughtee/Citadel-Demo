@@ -65,6 +65,7 @@
      <Compile Include="Assets\Scripts\PlayerMoveMouse.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\QuadrantAttack.cs" />
+     <Compile Include="Assets\Scripts\RotateTowardTarget.cs" />
      <Compile Include="Assets\Scripts\SpiderEnemyAI.cs" />
      <Compile Include="Assets\Scripts\StartMenu.cs" />
      <Compile Include="Assets\Scripts\Sword.cs" />

@@ -11,26 +11,18 @@ public class EnemyController : MonoBehaviour
 	public GameObject projectile;
 	public float fireRate;
 	private float nextFire;
-	public bool doesnotDisengage = false; // Finds player, doesn't stop attacking.
-	private bool playerFound = false;
-
-
 
 
 	// Use this for initialization
 	void Start ()
 	{
-			
-		playerFound = false;
-			{
-						
+		{
 		if (GetComponent<Rigidbody> ()) 
 			{
-				GetComponent<Rigidbody> ().freezeRotation = true;
-
+			 GetComponent<Rigidbody> ().freezeRotation = true;
 			}
 
-			}
+		}
 	}
 	
 	// Update is called once per frame
@@ -39,22 +31,9 @@ public class EnemyController : MonoBehaviour
 	
 		if (player) 
 		{
-			if (attackRange > Vector3.Distance (player.transform.position, transform.position)
-				|| playerFound) 
+			if (attackRange > Vector3.Distance (player.transform.position, transform.position) ) 
 			{
-				// We found the Player  We don't want to stop attacking
-				if (doesnotDisengage) 
-				{
-					playerFound = true;
-				
-
-				} 
-				// Look AT Player */
-				transform.LookAt (player.transform);
-
-
-
-
+				Debug.Log ( "Within Range!" + Vector3.Distance (player.transform.position, transform.position));
 				if (Time.time > nextFire) 
 				{
 					nextFire = Time.time + fireRate;
@@ -64,7 +43,10 @@ public class EnemyController : MonoBehaviour
 					bullet.GetComponent<Projectile> () .CreatedBy ("Enemy03");
 				}
 
-			} 
+			} else 
+			{
+				Debug.Log ( Vector3.Distance (player.transform.position, transform.position) );
+			}
 		
 		} 
 		else 
@@ -72,21 +54,6 @@ public class EnemyController : MonoBehaviour
 			player = GameObject.FindGameObjectWithTag ("Player");
 			
 		}
-	}
-	void OnTriggerStay2D(Collider2D col)
-	{
-		
-		if (col.tag == "Player") {
-						
-			playerFound = true;
-
-
-				} 
-		else 
-		{	
-			playerFound = false;
-				}
-
 	}
 
 
