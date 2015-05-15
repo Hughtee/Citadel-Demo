@@ -13,9 +13,7 @@ public class EnemyAttack : MonoBehaviour {
 	float NE = 3.92699082f; // 225
 	float NW = 5.49778714f; // 315
 	float PI = 3.14159265f; // 180
-
-	public EnemyAI.EnemyDirection direction;
-	EnemyAI enemy;
+	
 
 
 
@@ -32,22 +30,30 @@ public class EnemyAttack : MonoBehaviour {
 
 	void OnTrigger2D (Collider2D collider)
 	{
-		if (collider.CompareTag ("Player")) {				
+		if (collider.CompareTag ("Player")) 
+		{				
 
 			anim.SetBool ("Attack", true);
 
-			if( isInsidePieSlice ( collider.transform.position, SW, SE ) ) {
+			if( isInsidePieSlice ( collider.transform.position, SW, SE ) ) 
+			{
 				Debug.Log( "COLLIDED SOUTH" );
+				anim.SetBool ("Down", true);
 
 			}
-			else if( isInsidePieSlice ( collider.transform.position, SE, NE ) ) {
+			else if( isInsidePieSlice ( collider.transform.position, SE, NE ) ) 
+			{
 				Debug.Log( "COLLIDED EAST" );
+				anim.SetBool ("Right", true);
 			}
-			else if( isInsidePieSlice ( collider.transform.position, NE, NW ) ) {
+			else if( isInsidePieSlice ( collider.transform.position, NE, NW ) ) 
+			{
 				Debug.Log( "COLLIDED NORTH" );
+				anim.SetBool ("Up", true);
 			}
 			else {
 				Debug.Log( "COLLIDED WEST" );
+				anim.SetBool ("Left", true);
 			}
 		}
 	}

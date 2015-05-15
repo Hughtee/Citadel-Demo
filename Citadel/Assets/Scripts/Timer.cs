@@ -56,7 +56,7 @@ public class Timer : MonoBehaviour
 	{
 		GetComponent<GUIText>().enabled = false;
 
-		float fadeTime = fade.BeginFade (1);
+		fade.BeginFade (1);
 		yield return new WaitForSeconds (3.0f);
 		Application.LoadLevel (levelName);
 	}

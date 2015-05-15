@@ -48,7 +48,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Collisions.cs" />
-     <Compile Include="Assets\Scripts\Depth.cs" />
      <Compile Include="Assets\Scripts\DoNoTDestroy.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />

@@ -11,11 +11,13 @@ public class EnemyController : MonoBehaviour
 	public GameObject projectile;
 	public float fireRate;
 	private float nextFire;
+	public Animator anim;
 
 
 	// Use this for initialization
 	void Start ()
 	{
+		anim = GetComponent<Animator>();
 		{
 		if (GetComponent<Rigidbody> ()) 
 			{
@@ -36,6 +38,7 @@ public class EnemyController : MonoBehaviour
 				Debug.Log ( "Within Range!" + Vector3.Distance (player.transform.position, transform.position));
 				if (Time.time > nextFire) 
 				{
+					anim.SetBool ("Attack", true);
 					nextFire = Time.time + fireRate;
 
 					GameObject bullet = Instantiate (projectile, firePoint.position, firePoint.rotation) as GameObject;
@@ -45,6 +48,7 @@ public class EnemyController : MonoBehaviour
 
 			} else 
 			{
+				anim.SetBool ("Attack", false);
 				Debug.Log ( Vector3.Distance (player.transform.position, transform.position) );
 			}
 		
