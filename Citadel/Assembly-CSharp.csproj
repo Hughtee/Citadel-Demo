@@ -56,13 +56,13 @@
      <Compile Include="Assets\Scripts\FadeInOut.cs" />
      <Compile Include="Assets\Scripts\Fading.cs" />
      <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\GhoulAI.cs" />
      <Compile Include="Assets\Scripts\Highscore.cs" />
      <Compile Include="Assets\Scripts\KillScript.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMoveMouse.cs" />
-     <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\QuadrantAttack.cs" />
      <Compile Include="Assets\Scripts\RotateTowardTarget.cs" />
      <Compile Include="Assets\Scripts\SpiderEnemyAI.cs" />
@@ -71,11 +71,13 @@
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\ToStartMenu.cs" />
      <Compile Include="Assets\Scripts\WebsiteButton.cs" />
+     <Compile Include="Assets\Scripts\enemyAnimation.cs" />
      <Compile Include="Assets\Scripts\enemyHealth.cs" />
      <Compile Include="Assets\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Scripts\gun.cs" />
      <Compile Include="Assets\Scripts\playerAnimation.cs" />
      <Compile Include="Assets\Scripts\playerMoveWASD.cs" />
+     <Compile Include="Assets\Scripts\projectile.cs" />
      <None Include="Assets\Materials\Obelisk.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
