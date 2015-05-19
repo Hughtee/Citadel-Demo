@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\enemyHealth.cs" />
      <Compile Include="Assets\Scripts\enemyManager.cs" />
      <Compile Include="Assets\Scripts\gun.cs" />
+     <Compile Include="Assets\Scripts\instruction.cs" />
      <Compile Include="Assets\Scripts\playerAnimation.cs" />
      <Compile Include="Assets\Scripts\playerMoveWASD.cs" />
      <Compile Include="Assets\Scripts\projectile.cs" />

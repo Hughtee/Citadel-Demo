@@ -4,46 +4,7 @@ using System.Collections;
 public class PauseMenu : MonoBehaviour {
 
 
-	/*bool paused = false;
-	
-	void Update()
-	{
-		if(Input.GetKeyDown(KeyCode.Escape))
-			paused = togglePause();
-	}
-	
-	void OnGUI()
-	{
-		if (paused) 
-		{
-			GUILayout.Label ("Game is paused!");
-			if (GUILayout.Button ("Click me to unpause"))
-			paused = togglePause ();
-		} 
 
-		else 
-		{
-			GUILayout.Label("Game is unpaused!");
-			if(GUILayout.Button("Click me to pause"))
-				paused = togglePause ();
-		
-		}
-
-	}
-	
-	bool togglePause()
-	{
-		if(Time.timeScale == 0f)
-		{
-			Time.timeScale = 1f;
-			return(false);
-		}
-		else
-		{
-			Time.timeScale = 0f;
-			return(true);    
-		}
-	} */
 	//refrence for the pause menu panel in the hierarchy
 	public GameObject pauseMenuPanel;
 	//animator reference
