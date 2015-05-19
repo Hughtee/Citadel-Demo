@@ -11,7 +11,7 @@ public class Pickup : MonoBehaviour {
 			if (col.tag == "Player")
 			{
 				//money collected
-				col.gameObject.GetComponent<PlayerHealth>().addHealth();
+			GetComponent<PlayerHealth>().addHealth();
 				
 				//destroy money object
 				Destroy(gameObject);

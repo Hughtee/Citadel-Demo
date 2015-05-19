@@ -43,7 +43,7 @@ public class EnemyController : MonoBehaviour
 
 					GameObject bullet = Instantiate (projectile, firePoint.position, firePoint.rotation) as GameObject;
 				
-					bullet.GetComponent<Projectile> () .CreatedBy ("Enemy03");
+					bullet.GetComponent<shootshoot> () .CreatedBy ("Enemy03");
 				}
 
 			} else 

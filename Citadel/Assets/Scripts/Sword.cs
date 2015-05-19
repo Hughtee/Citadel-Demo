@@ -5,9 +5,9 @@ public class Sword : MonoBehaviour
 {
 	public playerMoveWASD.Direction direction;
 	playerMoveWASD player;
-	public GameObject[] Items;
 	public Timer timer;
 	public int killValue = 1;
+	public PlayerHealth Health;
 
 	void Start()
 	{
@@ -23,9 +23,9 @@ public class Sword : MonoBehaviour
 				if(other.gameObject.tag == "Enemy")
 				{
 					Destroy (other.gameObject);
-					timer.addTime();
+					//timer.addTime();
 					KillScript.score += killValue;
-					Instantiate(Items[Random.Range(0, Items.Length)], transform.position, Quaternion.identity);
+					//Instantiate(Items[Random.Range(0, Items.Length)], transform.position, Quaternion.identity);
 
 					if (timer.time > 60) 
 						timer.time = 60;
@@ -40,6 +40,14 @@ public class Sword : MonoBehaviour
 				{
 					Destroy (other.gameObject);
 					KillScript.score += killValue;
+					
+				}
+				else if(other.gameObject.tag == "Health")
+				{
+					Destroy (other.gameObject);
+					KillScript.score += killValue;
+					Health.addHealth();
+
 					
 				}
 			}

@@ -28,6 +28,7 @@ public class playerMoveWASD : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
+
 		float H_move = Input.GetAxis ("Vertical");
 		GetComponent<Rigidbody2D >().velocity = new Vector2 (H_move * maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		

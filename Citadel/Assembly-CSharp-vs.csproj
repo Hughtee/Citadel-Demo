@@ -78,7 +78,7 @@
      <Compile Include="Assets\Scripts\instruction.cs" />
      <Compile Include="Assets\Scripts\playerAnimation.cs" />
      <Compile Include="Assets\Scripts\playerMoveWASD.cs" />
-     <Compile Include="Assets\Scripts\projectile.cs" />
+     <Compile Include="Assets\Scripts\shootshoot.cs" />
      <None Include="Assets\Materials\Obelisk.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

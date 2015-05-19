@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 1c5c5b46de21c6c43bd18e151e3258e3
-timeCreated: 1432073296
+guid: 44f5f667763575c4da55d68f6a126a44
+timeCreated: 1432073455
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: HealthSlime_0
-    21300002: HealthSlime_1
-    21300004: HealthSlime_2
-    21300006: HealthSlime_3
-    21300008: HealthSlime_4
-    21300010: HealthSlime_5
+    21300000: TimeSlimes_0
+    21300002: TimeSlimes_1
+    21300004: TimeSlimes_2
+    21300006: TimeSlimes_3
+    21300008: TimeSlimes_4
+    21300010: TimeSlimes_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,8 +46,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: .5, y: .5}
+  alignment: 7
+  spritePivot: {x: .5, y: 0}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 75
   alphaIsTransparency: 1
@@ -55,65 +55,65 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: HealthSlime_0
+    - name: TimeSlimes_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 17
         y: 56
         width: 38
         height: 37
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HealthSlime_1
+    - name: TimeSlimes_1
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 56
         width: 38
         height: 35
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HealthSlime_2
+    - name: TimeSlimes_2
       rect:
         serializedVersion: 2
-        x: 112
+        x: 107
         y: 56
         width: 39
         height: 33
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HealthSlime_3
+    - name: TimeSlimes_3
       rect:
         serializedVersion: 2
-        x: 22
-        y: 9
+        x: 17
+        y: 11
         width: 39
         height: 33
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HealthSlime_4
+    - name: TimeSlimes_4
       rect:
         serializedVersion: 2
-        x: 66
-        y: 9
+        x: 61
+        y: 11
         width: 38
         height: 35
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: HealthSlime_5
+    - name: TimeSlimes_5
       rect:
         serializedVersion: 2
-        x: 113
-        y: 9
+        x: 107
+        y: 11
         width: 38
         height: 37
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
