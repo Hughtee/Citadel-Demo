@@ -25,6 +25,7 @@ public class playerMoveWASD : MonoBehaviour
 
 	}
 
+
 	// Update is called once per frame
 	void FixedUpdate () 
 	{

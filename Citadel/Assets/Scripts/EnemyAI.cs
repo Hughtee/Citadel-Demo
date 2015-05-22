@@ -20,9 +20,6 @@ public class EnemyAI : MonoBehaviour
 	void Update () 
 	{
 
-
-
-
 		if(Player == null)
 			Player = GameObject.Find ("Player").transform;
 
@@ -54,6 +51,8 @@ public class EnemyAI : MonoBehaviour
 		}
 		
 	}
+
+
 	void OnCollisionEnter2D (Collision2D Playerhit) 
 	{
 		if(Playerhit.gameObject.tag == "Player")

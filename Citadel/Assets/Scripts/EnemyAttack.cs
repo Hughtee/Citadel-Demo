@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour {
 	public Transform Player;
 	public float pushBack = 100;
-	public float damage = 5;
+	public float damage = 25;
 	public float stunTimeStamp = -3;
 	public Animator anim;
 

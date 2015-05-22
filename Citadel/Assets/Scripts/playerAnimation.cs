@@ -42,6 +42,8 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",false);
+
+
 		}
 		if (Input.GetKey (KeyCode.S)) 
 		{
@@ -49,6 +51,8 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",true);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",false);
+		
+
 		}
 		if (Input.GetKey (KeyCode.D)) 
 		{
@@ -56,6 +60,8 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",true);
 			anim.SetBool ("Up",false);
+	
+
 		}
 		if (Input.GetKey (KeyCode.W)) 
 		{
@@ -63,6 +69,8 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",true);
+		
+
 		}
 		if (Input.GetKey(KeyCode.W)) 
 		{

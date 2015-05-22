@@ -46,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
 	}
 	public void minusHealth ()
 	{
-		Health -= 1f;
+		Health -= 10f;
 		
 	
 		

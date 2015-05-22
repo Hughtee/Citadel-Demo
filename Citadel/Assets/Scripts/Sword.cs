@@ -50,6 +50,14 @@ public class Sword : MonoBehaviour
 
 					
 				}
+				else if(other.gameObject.tag == "Time")
+				{
+					Destroy (other.gameObject);
+					KillScript.score += killValue;
+					timer.addTime();
+					
+					
+				}
 			}
 		}
 	}

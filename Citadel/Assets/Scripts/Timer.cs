@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
 								if (time > 60) 
 									time = 60;
 								//Application.LoadLevel ("Winner");
-								StartCoroutine( ChangeLevel ( "Winner") );
+								StartCoroutine( ChangeLevel ( "GameOver") );
 
 						}	
 				
