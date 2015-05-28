@@ -9,6 +9,13 @@ public class playerAnimation : MonoBehaviour {
 	const float coolDown = 0.5f;
 	public float timer = 0.0f;
 
+	public bool handleTouch;
+	public bool up_key;
+	public bool down_key;
+	public bool left_key;
+	public bool right_key;
+	public bool attack_key;
+
 
 	void Start () 
 	{
@@ -23,20 +30,20 @@ public class playerAnimation : MonoBehaviour {
 	void Update () 
 	{
 		UpdateTimer ();
-		if (Input.GetMouseButtonDown(0))
-		{
-			if (timer <= 0.0f)
-			{
-				anim.SetBool ("Attack", true);
-				timer = coolDown;
-			}
-		}
-		else
-		{
-			anim.SetBool ("Attack", false);
-		}
 
-		if (Input.GetKey (KeyCode.A)) 
+			if ( (Input.GetMouseButtonDown (0) && !handleTouch) || 
+			    ( handleTouch && attack_key ) ) {
+				if (timer <= 0.0f) {
+					anim.SetBool ("Attack", true);
+				    Debug.Log ("Attack = true");
+					timer = coolDown;
+				}
+			} else {
+				anim.SetBool ("Attack", false);
+			}
+		
+
+		if (Input.GetKey (KeyCode.A) || left_key) 
 		{
 			anim.SetBool ("Left",true);
 			anim.SetBool ("Down",false);
@@ -45,7 +52,7 @@ public class playerAnimation : MonoBehaviour {
 
 
 		}
-		if (Input.GetKey (KeyCode.S)) 
+		if (Input.GetKey (KeyCode.S) || down_key) 
 		{
 			anim.SetBool ("Left",false);
 			anim.SetBool ("Down",true);
@@ -54,7 +61,7 @@ public class playerAnimation : MonoBehaviour {
 		
 
 		}
-		if (Input.GetKey (KeyCode.D)) 
+		if (Input.GetKey (KeyCode.D) || right_key) 
 		{
 			anim.SetBool ("Left",false);
 			anim.SetBool ("Down",false);
@@ -63,7 +70,7 @@ public class playerAnimation : MonoBehaviour {
 	
 
 		}
-		if (Input.GetKey (KeyCode.W)) 
+		if (Input.GetKey (KeyCode.W) || up_key) 
 		{
 			anim.SetBool ("Left",false);
 			anim.SetBool ("Down",false);
@@ -72,15 +79,15 @@ public class playerAnimation : MonoBehaviour {
 		
 
 		}
-		if (Input.GetKey(KeyCode.W)) 
+		if (Input.GetKey(KeyCode.W) || up_key) 
 		{
-				anim.SetBool ("WalkUp", true);
+			anim.SetBool ("WalkUp", true);
 		} 
 		else 
 		{
 			anim.SetBool ("WalkUp", false);
 		}
-		if (Input.GetKey(KeyCode.A)) 
+		if (Input.GetKey(KeyCode.A) || left_key) 
 		{
 			anim.SetBool ("WalkLeft", true);
 		} 
@@ -88,14 +95,14 @@ public class playerAnimation : MonoBehaviour {
 		{
 			anim.SetBool ("WalkLeft", false);
 		}
-		if (Input.GetKey(KeyCode.D)) 
+		if (Input.GetKey(KeyCode.D) || right_key) 
 		{
 			anim.SetBool ("WalkRight", true);
 		} 
 		else {
 			anim.SetBool ("WalkRight", false);
 		}
-		if (Input.GetKey(KeyCode.S)) 
+		if (Input.GetKey(KeyCode.S) || down_key) 
 		{
 			anim.SetBool ("WalkDown", true);
 		} 

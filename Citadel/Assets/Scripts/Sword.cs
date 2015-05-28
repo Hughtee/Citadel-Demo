@@ -16,7 +16,8 @@ public class Sword : MonoBehaviour
 
 	void OnTriggerStay2D (Collider2D other)
 	{
-		if(Input.GetButtonDown("Fire1") )
+		if( (Input.GetButtonDown("Fire1") && !player.handleTouch) ||
+		     (player.handleTouch && player.attack_key) )
 		{
 			if(direction == player.direction)
 			{
