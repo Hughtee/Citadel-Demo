@@ -20,7 +20,8 @@ public class KillScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		text.text = "ENEMIES KILLED:" + score;
+		if(text)
+			text.text = "ENEMIES KILLED:" + score;
 	
 	}
 }

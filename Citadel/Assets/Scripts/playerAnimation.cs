@@ -15,11 +15,19 @@ public class playerAnimation : MonoBehaviour {
 	public bool left_key;
 	public bool right_key;
 	public bool attack_key;
+	public AudioClip slashSound;
+	private AudioSource Source;
+	private float volLowRange= .5f;
+	private float volHighRange= 1.0f;
+	public AudioClip stepSound;
+	private AudioSource sources;
 
 
 	void Start () 
 	{
+		Source = GetComponent<AudioSource>();
 		anim = GetComponent<Animator>();
+		sources = GetComponent<AudioSource>();
 	}
 	
 	void UpdateTimer ()
@@ -33,8 +41,10 @@ public class playerAnimation : MonoBehaviour {
 
 			if ( (Input.GetMouseButtonDown (0) && !handleTouch) || 
 			    ( handleTouch && attack_key ) ) {
+
 				if (timer <= 0.0f) {
 					anim.SetBool ("Attack", true);
+					Source.PlayOneShot(slashSound,.5F);
 				    Debug.Log ("Attack = true");
 					timer = coolDown;
 				}
@@ -49,6 +59,7 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",false);
+			sources.PlayOneShot(stepSound,.0F);
 
 
 		}
@@ -58,6 +69,7 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",true);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",false);
+			sources.PlayOneShot(stepSound,.0F);
 		
 
 		}
@@ -67,6 +79,7 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",true);
 			anim.SetBool ("Up",false);
+			sources.PlayOneShot(stepSound,.0F);
 	
 
 		}
@@ -76,6 +89,7 @@ public class playerAnimation : MonoBehaviour {
 			anim.SetBool ("Down",false);
 			anim.SetBool ("Right",false);
 			anim.SetBool ("Up",true);
+			sources.PlayOneShot(stepSound,.0F);
 		
 
 		}

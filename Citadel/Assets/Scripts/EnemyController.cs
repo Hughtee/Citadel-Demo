@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
 			} else 
 			{
 				anim.SetBool ("Attack", false);
-				Debug.Log ( Vector3.Distance (player.transform.position, transform.position) );
+				//Debug.Log ( Vector3.Distance (player.transform.position, transform.position) );
 			}
 		
 		} 

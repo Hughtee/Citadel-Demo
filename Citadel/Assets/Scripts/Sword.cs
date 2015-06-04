@@ -4,23 +4,36 @@ using System.Collections;
 public class Sword : MonoBehaviour 
 {
 	public playerMoveWASD.Direction direction;
-	playerMoveWASD player;
+	public playerMoveWASD player;
 	public Timer timer;
 	public int killValue = 1;
 	public PlayerHealth Health;
+	public AudioClip slashSound;
+	//private AudioSource Source;
 
 	void Start()
 	{
+		//Source = GetComponent<AudioSource>();
 		player = FindObjectOfType<playerMoveWASD> ();
+	}
+
+	void Update() {
+
 	}
 
 	void OnTriggerStay2D (Collider2D other)
 	{
+		if( player == null ) Debug.Log ("Player null");
+
 		if( (Input.GetButtonDown("Fire1") && !player.handleTouch) ||
 		     (player.handleTouch && player.attack_key) )
-		{
+		{	
+			//Source.PlayOneShot(slashSound,1F);
+			Debug.Log( "Slash!");
+
 			if(direction == player.direction)
-			{
+			{	
+
 				if(other.gameObject.tag == "Enemy")
 				{
 					Destroy (other.gameObject);
